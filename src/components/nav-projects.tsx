@@ -28,7 +28,7 @@ export function NavProjects({
           <SidebarMenuItem className="py-[4px]" key={item.name}>
             <SidebarMenuButton
               asChild
-              isActive={pathname === item.url}
+              isActive={pathname.includes(item.url)}
               onClick={() => {
                 isMobile && toggleSidebar();
               }}
